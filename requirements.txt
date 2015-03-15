@@ -1,3 +1,7 @@
 Django
 South
+coverage
+coveralls
 freezegun
+nose
+tox

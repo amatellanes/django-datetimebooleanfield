@@ -1,0 +1,24 @@
+language: python
+
+script:
+  - tox -e coverage
+
+python:
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+
+env:
+  - DJANGO_VERSION=1.0.4
+  - DJANGO_VERSION=1.1.4
+  - DJANGO_VERSION=1.2.7
+  - DJANGO_VERSION=1.3.7
+  - DJANGO_VERSION=1.4.19
+  - DJANGO_VERSION=1.5.12
+  - DJANGO_VERSION=1.6.10
+  - DJANGO_VERSION=1.7.6
+  - DJANGO_VERSION=1.8.b2
+
+after_success:
+  - coveralls
